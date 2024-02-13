@@ -36,16 +36,16 @@ export default function Home() {
             alt="Mail"
             width={500}
             onClick={handleMailClick}
-            className={mailSrc === 'mail_closed.png' ? 'mail-hover' : ''}
+            className={mailSrc === '/mail_closed.png' ? 'mail-hover' : ''}
             />
           <h1 className='text-4xl sm:text-5xl'>
             You got mail!
           </h1>
         </div>
         <img
-          src="heart.png"
+          src="/heart.png"
           width={200}
-          className={`heart ${mailSrc === 'mail_opened.png' ? '' : 'hidden'}`}
+          className={`heart ${mailSrc === '/mail_opened.png' ? '' : 'hidden'}`}
         />
 
         <div className={`form absolute max-w-[800px] text-md p-10 ${mailSrc === '/mail_opened.png' ? '' : 'hidden'}`}>

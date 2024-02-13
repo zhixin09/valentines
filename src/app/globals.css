@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Short Stack';
-  src: url('ShortStack-Regular.otf');
+  src: url('/ShortStack-Regular.otf');
  }
 
 body {

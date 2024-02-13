@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Short Stack';
+  font-family: 'ShortStack';
   src: url('/ShortStack-Regular.otf');
  }
 
 body {
   background-color: rgb(248, 211, 200);
   color: rgb(60, 60, 60);
-  font-family: 'Short Stack', cursive;
+  font-family: 'ShortStack', cursive;
   display: flex;
   flex-direction: column;
   height: 100svh;

@@ -43,7 +43,7 @@ export default function Home() {
           </h1>
         </div>
         <img
-          src="/heart.png"
+          src="heart.png"
           width={200}
           className={`heart ${mailSrc === 'mail_opened.png' ? '' : 'hidden'}`}
         />

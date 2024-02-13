@@ -6,7 +6,7 @@ export const metadata = {
   description: "Avent sent you a letter!",
   metadataBase: new URL('https://aventchiu.com/valentines'),
   openGraph: {
-    images: '/heart.png'
+    images: 'heart.png'
   }
 };
 

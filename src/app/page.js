@@ -2,13 +2,13 @@
 import { useState } from 'react';
 
 export default function Home() {
-  const [mailSrc, setMailSrc] = useState('/mail_closed.png');
+  const [mailSrc, setMailSrc] = useState('mail_closed.png');
   const [isNoClicked, setIsNoClicked] = useState(false);
   const [isYes, setIsYes] = useState(false);
 
 
   const handleMailClick = () => {
-    setMailSrc((prevSrc) => (prevSrc === '/mail_closed.png' ? '/mail_opened.png' : '/mail_closed.png'));
+    setMailSrc((prevSrc) => (prevSrc === 'mail_closed.png' ? 'mail_opened.png' : 'mail_closed.png'));
   };
 
   const handleNoClick = () => {
@@ -36,7 +36,7 @@ export default function Home() {
             alt="Mail"
             width={500}
             onClick={handleMailClick}
-            className={mailSrc === '/mail_closed.png' ? 'mail-hover' : ''}
+            className={mailSrc === 'mail_closed.png' ? 'mail-hover' : ''}
             />
           <h1 className='text-4xl sm:text-5xl'>
             You got mail!
@@ -45,10 +45,10 @@ export default function Home() {
         <img
           src="/heart.png"
           width={200}
-          className={`heart ${mailSrc === '/mail_opened.png' ? '' : 'hidden'}`}
+          className={`heart ${mailSrc === 'mail_opened.png' ? '' : 'hidden'}`}
         />
 
-        <div className={`form absolute max-w-[800px] text-md p-10 ${mailSrc === '/mail_opened.png' ? '' : 'hidden'}`}>
+        <div className={`form absolute max-w-[800px] text-md p-10 ${mailSrc === 'mail_opened.png' ? '' : 'hidden'}`}>
           <h4>Dear, Bonnie</h4>
           <br />
           <h4>Will you be my valentine?</h4>

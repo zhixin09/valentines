@@ -2,8 +2,7 @@
 const nextConfig = {
   output: 'export',
   images: {
-    unoptimized: true,
-    formats: ['image/webp']
+    unoptimized: true
   },
   optimizeFonts: false,
   basePath: '/valentines',

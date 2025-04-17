@@ -5,13 +5,13 @@ import { Pacifico } from 'next/font/google'
 const pacifico = Pacifico({ weight: '400', subsets: ['latin'] });
 
 export default function Home() {
-  const [mailSrc, setMailSrc] = useState('/valentines/mail_closed.png');
+  const [mailSrc, setMailSrc] = useState('mail_closed.png');
   const [isNoClicked, setIsNoClicked] = useState(false);
   const [isYes, setIsYes] = useState(false);
 
 
   const handleMailClick = () => {
-    setMailSrc((prevSrc) => (prevSrc === '/valentines/mail_closed.png' ? '/valentines/mail_opened.png' : '/valentines/mail_closed.png'));
+    setMailSrc((prevSrc) => (prevSrc === 'mail_closed.png' ? 'mail_opened.png' : 'mail_closed.png'));
   };
 
   const handleNoClick = () => {
@@ -39,19 +39,19 @@ export default function Home() {
             alt="Mail"
             width={500}
             onClick={handleMailClick}
-            className={mailSrc === '/valentines/mail_closed.png' ? 'mail-hover' : ''}
+            className={mailSrc === 'mail_closed.png' ? 'mail-hover' : ''}
             />
           <h1 className={pacifico.className}> 
             You got mail!
           </h1>
         </div>
         <img
-          src="/valentines/heart.png"
+          src="heart.png"
           width={200}
-          className={`heart ${mailSrc === '/valentines/mail_opened.png' ? '' : 'hidden'}`}
+          className={`heart ${mailSrc === 'mail_opened.png' ? '' : 'hidden'}`}
         />
 
-        <div className={`form absolute max-w-[800px] text-md p-10 ${mailSrc === '/valentines/mail_opened.png' ? '' : 'hidden'}`}>
+        <div className={`form absolute max-w-[800px] text-md p-10 ${mailSrc === 'mail_opened.png' ? '' : 'hidden'}`}>
           <h4 className={pacifico.className}>Dear, Yiling {`<3`}</h4>
           <br />
           <h4 className={pacifico.className}>Will you be my girlfriend!</h4>
@@ -83,11 +83,11 @@ export default function Home() {
       <div className='text-center flex flex-col items-center'>
         <h4 className={pacifico.className}>Yay! I love you</h4>
         <br />
-        <h4 className={pacifico.className}>Can't wait to see you tomorrow!</h4>
+        <h4 className={pacifico.className}>Can’t wait to see you tomorrow!</h4>
         <br />
-        <h4 className={pacifico.className}>Have a safe and wonderful flight!</h4>
+        <h4 className={pacifico.className}>Have a safe and wounderful flight!</h4>
         <br />
-        <img width={150} src="/valentines/sugarcubs-sugar.gif"/>
+        <img width={150} src="sugarcubs-sugar.gif"/>
         <h5 className={pacifico.className}>Muah muah!</h5>
       </div>
       }

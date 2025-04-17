@@ -1,22 +1,13 @@
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: 'export', // Essential for GitHub Pages
   images: {
-    
-    formats:['image/webp']
+    unoptimized: true // Important for GitHub Pages compatibility
   },
-  optimizeFonts: false,
-  basePath: ''
-  // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-  // trailingSlash: true,
- 
-  // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
-  // skipTrailingSlashRedirect: true,
- 
-  // Optional: Change the output directory `out` -> `dist`
-  // distDir: 'dist',
-}
- 
-module.exports = nextConfig
+  optimizeFonts: false, // Optional optimization (can be true or false)
+  basePath: '/valentines', // Your site's path on GitHub Pages
+  assetPrefix: '/valentines/', // Matches basePath for assets
+  trailingSlash: true // Recommended for consistent routing
+};
+
+module.exports = nextConfig;
